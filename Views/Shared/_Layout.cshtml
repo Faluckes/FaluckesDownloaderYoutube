@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FalcockDownloaderWebSite</title>
+    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FalcockDownloaderWebSite.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Images/fra b.png" alt="logo" width="72" height="72" />
+        <nav>
+            <ul class="nav__links">
+                        <li><a  asp-area="" asp-controller="Home" asp-action="Index">Video Download</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Privacy">About</a></li>
+            </ul>
+                    <a class="cta" ><button>Contact</button></a>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <a id="txtcopy">&nbsp; &nbsp; &copy; 2023 - FaluckesDev Copyright -</a> <a id="cpr" asp-area="" asp-controller="Home" asp-action="Privacy">About</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
