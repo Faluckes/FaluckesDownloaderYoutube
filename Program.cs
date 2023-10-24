@@ -44,6 +44,7 @@ app.UseStaticFiles();
 app.UseDirectoryBrowser();
 app.MapRazorPages();
 
+
 app.Run();
 
 
