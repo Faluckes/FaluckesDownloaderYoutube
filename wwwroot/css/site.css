@@ -7,6 +7,9 @@
     margin: 0;
     background-color: #2C2F33;
 }
+#topo{
+    border: 10px black;
+}
 
 
 body {
@@ -15,6 +18,7 @@ body {
     background-color: #2C2F33;
     padding: 0;
     margin: 0;
+    border-bottom: 5px black;
 }
 
 li, a, button {
@@ -60,6 +64,8 @@ a{
 .nav__links {
     list-style: none;
     display: inline-block;
+    padding-top:10px;
+    margin-bottom: 40px;
 }
 
     .nav__links li {
@@ -68,11 +74,11 @@ a{
     }
 
     .nav__links li:nth-child(1){
-        padding: 0 20px 0 0;
+        padding: 0 10px 0 0;
     }
 
         .nav__links li a {
-            transition: all 0.5s ease 0s;
+            transition: all 0.8s ease 0s;
         }
 
             .nav__links li a:hover {
@@ -122,7 +128,8 @@ svg {
 
 .radio{
     margin-top: 20px;
-    margin-left:35px;
+    margin-left:20px;
+    
     display: inline-flex;
     overflow:hidden;
     border-radius: 15px;
@@ -133,15 +140,18 @@ svg {
     display: none;
 }
 
-.radio__label{
+.radio__label {
     padding: 8px 14px;
     font-size: 14px;
     font-family: sans-serif;
     color: white;
-    background: #009578;
+    background: rgba(0, 149, 120, 1);
     cursor: pointer;
-    transition: background 0.1s;
+    transition: background 0.5s;
 }
+    .radio__label:hover {
+        background: rgba(0, 149, 120, .7)
+    }
 .radio__label:not(:last-of-type){
     border-right: 1px solid #006B56;
 }
@@ -186,7 +196,7 @@ svg {
 }
 
 #btn {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 20px;
     padding: 5px;
     border-radius: 250px;
@@ -220,3 +230,18 @@ svg {
     padding-left: 100px;
     padding-right: 100px;
 }
+
+
+
+#btn-download{
+    margin-top: 20px;
+    margin-left: 31px;
+}
+#btn-converter{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+
+
+

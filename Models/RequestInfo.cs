@@ -15,6 +15,9 @@ namespace FalcockDownloaderWebSite.Models
     public enum Format
     {
         Mp3,
-        Mp4
+        Mp4,
+        Wav,
+        Mov
+
     }
 }

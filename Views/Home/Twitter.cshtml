@@ -17,19 +17,11 @@
 
 
             @*<form action="/Home/Salvar" method="post">*@
-            @using (Html.BeginForm("Salvar", "Home", FormMethod.Post))
+            @using (Html.BeginForm("SalvarTT", "Home", FormMethod.Post))
             {
 
                 @Html.TextBoxFor(Model => Model.URL, new {placeholder="Coloque a URL aqui", min="1", @class="form-control", value="@Model.URL", })
-                <br />
-                <div class="radio">
-                    @Html.RadioButtonFor(model => model.Format, 0, new{@class="radio__input", @id="mp3"})
-                    <label for="mp3" class="radio__label">Mp3</label>
 
-
-                    @Html.RadioButtonFor(model => model.Format, 1, new {@class="radio__input", @id="mp4"})
-                    <label for="mp4" class="radio__label">Mp4</label>
-                </div>
                 <br />
                 <br />
                 <div class="VideoId">
@@ -53,4 +45,3 @@
 </script>
 
 </html>
-

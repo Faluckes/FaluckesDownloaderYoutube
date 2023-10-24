@@ -1,0 +1,44 @@
+﻿@model FalcockDownloaderWebSite.Models.RequestInfo;
+<html>
+<head>
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+
+<body>
+
+    <div class="row">
+
+
+        <div class="car card-body mt-4">
+
+            @using (Html.BeginForm("ConverterMidia", "Home", FormMethod.Post, new { id="formUpload", enctype="multipart/form-data" }))
+            {
+                <label id="fileConverter" for="File">Selecionar Arquivo</label>
+                <input type="file" id="File" name="file"/>
+                <br/>
+                <div class="radio">
+                    @Html.RadioButtonFor(model => model.Format, 0, new{@class="radio__input", @id="mp3"})
+                    <label for="mp3" class="radio__label">Mp3</label>
+
+                    @Html.RadioButtonFor(model => model.Format, 1, new {@class="radio__input", @id="mp4"})
+                    <label for="mp4" class="radio__label">Mp4</label>
+
+                    @Html.RadioButtonFor(model => model.Format, 2, new {@class="radio__input", @id="wav"})
+                    <label for="wav" class="radio__label">Wav</label>
+
+                    @Html.RadioButtonFor(model => model.Format, 3, new {@class="radio__input", @id="mov"})
+                    <label for="mov" class="radio__label">Mov</label>
+                <br/>
+
+                </div>
+                <br/>
+                <br/>
+                <button id="btn-converter" type="submit">Converter</button>
+            }
+
+        </div>
+
+    </div>
+</body>
+
+</html>
